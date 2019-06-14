@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="assests/css/reset.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 <head>
     <title>Kyle Wuellner</title>
@@ -9,14 +13,24 @@
 
 <body>
     <header id=heading>
-        <div class="container">
-            <a href="index.html" id="myname">Kyle Wuellner</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html" id=portfolio>Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a href="index.html" id="myname">Kyle Wuellner</a>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link active" href="index.html">About <span
+                                        class="sr-only"></span></a>
+                                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
+    </header>
     </header>
 
     <div id="main-container" class="container">

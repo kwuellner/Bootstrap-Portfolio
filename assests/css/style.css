@@ -37,7 +37,7 @@ h1 {
 #myname {
     width: 200px;
     height: 50px;
-    margin-left: 100px;
+    margin-left: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #4aaaa5;
     float: left;
@@ -47,14 +47,19 @@ h1 {
 }
 
 nav {
-    margin: 25px 125px 0 0;
-    float: right;
+    margin: 0;
+    float: left;
     display: inline-block;
     border-color: #cccccc;
     padding-left: 15px;
     line-height: 18px;
+    width: 100%;
 }
 
+#navbar-nav {
+    width: 100%;
+    float: right;
+}
 #portfolio {
     margin: 25px 25px 0 25px;
     padding: 0  30px;
@@ -132,6 +137,9 @@ footer {
     position: absolute;
     bottom: 0px;
 }
+.row {
+    margin: 5px;
+}
 
 #contact-form ul {
     margin-bottom: 20px;
@@ -167,4 +175,26 @@ input[type=submit] {
     color: #ffffff;
     font-size: 18px;
 
+}
+
+@media only screen and (max-width:980px) {
+
+    #heading {
+        width: 100%;
+        position: static;
+        height: 175px;
+    }
+
+    #myname {
+        width: 100%;
+        position: static;
+    }
+
+    #navbarNavAltMarkup {
+        display: block;
+        text-align: center;
+        word-wrap: break-word;         
+        width: 100%;
+        clear: both;
+    }
 }
